@@ -7744,10 +7744,13 @@ template {
     border-radius: 0px 8px 8px 0px;
     width: 40%; }
   @media (max-width: 567px) {
-    .single-line-form input,
-    .single-line-form button {
-      width: 50%;
-      font-size: 12px; } }
+    .single-line-form {
+      height: 40px; }
+      .single-line-form input,
+      .single-line-form button {
+        padding: 9px 7px;
+        width: 50%;
+        font-size: 12px; } }
 
 .features {
   padding: 63px 0;
