@@ -1,0 +1,45 @@
+//fonts
+$font-family-sans-serif: 'PT Sans', sans-serif;
+$font-size-base: 1rem * 1.125;
+
+//colors
+$primary: #005ed0;
+$secondary: #FF6100;
+
+//grid & breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 568px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1280px,
+);
+
+$container-max-widths: (
+  xs: 290px,
+  sm: 522px,
+  md: 708px,
+  lg: 944px,
+  xl: 1180px,
+);
+
+//headings
+$headings-font-weight: 700;
+
+$h1-font-size: calc(1rem * 3);
+$h2-font-size: calc(1rem * 2.5);
+
+@media (max-width: 1023px) {
+  $h1-font-size: calc(1rem * 2.25);
+  $h2-font-size: calc(1rem * 2);
+}
+
+@media (max-width: 767px) {
+  $h1-font-size: calc(1rem * 2);
+  $h2-font-size: calc(1rem * 1.75);
+}
+
+@media (max-width: 567px) {
+  $h1-font-size: calc(1rem * 1.75);
+  $h2-font-size: calc(1rem * 1.5);
+}

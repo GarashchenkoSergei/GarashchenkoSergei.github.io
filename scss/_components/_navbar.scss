@@ -1,0 +1,52 @@
+.navbar {
+  padding: 28px 0;
+}
+
+.navbar-brand {
+  img {
+    height: 21px;
+  }
+}
+
+.nav-item {
+  margin-left: 40px;
+}
+
+.nav-link {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 15px;
+  color: #fff;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: #fff;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.4);
+  }
+
+  &.disabled {
+    color: #fff;
+    opacity: 0.5;
+  }
+}
+
+.navbar-collapse.show {
+  height: calc(100vh - 96px);
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  .navbar-nav {
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .nav-item {
+    margin-left: 0;
+  }
+}
+
+.navbar-controls {
+  display: flex;
+}

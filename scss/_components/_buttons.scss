@@ -1,0 +1,43 @@
+.btn {
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 4px;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: #fff !important;
+  }
+}
+
+.btn-outline-navbar {
+  padding: 6px 27px;
+  font-weight: 400;
+  border-color: #fff;
+  opacity: 0.8;
+
+  &:hover,
+  &:focus,
+  &:active {
+    opacity: 1;
+  }
+}
+
+.navbar-toggler {
+  &:hover,
+  &:focus,
+  &:active {
+    border: none;
+    outline: none;
+  }
+}
+
+.btn-enter--mobile {
+  margin-left: 40px;
+  display: none;
+
+  @media (min-width: 568px) and (max-width: 1023px) {
+    display: block;
+  }
+}
