@@ -3,6 +3,10 @@
   height: 48px;
   box-shadow: 0px 2px 10px rgba(255, 97, 0, 0.2);
 
+  label {
+    display: none;
+  }
+
   input {
     height: 100%;
     width: 60%;

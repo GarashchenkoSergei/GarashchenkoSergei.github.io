@@ -7728,6 +7728,8 @@ template {
   display: flex;
   height: 48px;
   box-shadow: 0px 2px 10px rgba(255, 97, 0, 0.2); }
+  .single-line-form label {
+    display: none; }
   .single-line-form input {
     height: 100%;
     width: 60%;
