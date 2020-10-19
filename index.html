@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
   <title>Mastersystem</title>
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="./img/favicon.ico">
@@ -12,53 +12,58 @@
 
   <header class="header">
     <!-- NAVBAR -->
-    <section class="container">
-      <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand" href="/">
-          <img alt="Mastersystem logo" src="./img/logo.svg">
-        </a>
-        <div class="navbar-controls">
-          <button class="navbar-toggler hamburger hamburger--spin" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="hamburger-box">
-              <span class="hamburger-inner"></span>
-            </span>
-          </button>
-          <button type="button" class="btn btn-outline-navbar btn-enter--mobile">Bxoд</button>
-        </div>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Кейсы</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Особенности</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Контакты</a>
-            </li>
-            <li class="nav-item">
-              <button type="button" class="btn btn-enter btn-outline-navbar">Bxoд</button>
-            </li>
-          </ul>
-        </div>
-      </nav>
+    <section class="section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand" href="/">
+            <img alt="Mastersystem logo" src="./img/logo.svg">
+          </a>
+          <div class="navbar-controls">
+            <button class="navbar-toggler hamburger hamburger--spin" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
+            <button type="button" class="btn btn-outline-navbar btn-enter--mobile">Bxoд</button>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Кейсы</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Особенности</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">Контакты</a>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-enter btn-outline-navbar">Bxoд</button>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </section>
     <!-- / NAVBAR -->
 
     <!-- HERO-UNIT -->
-    <section class="container">
-      <div class="hero-unit">
-        <div class="hero-unit__column">
-          <h1 class="h1 hero-unit__title">Mastersystem</br>создавай и управляй</h1>
-          <p class="hero-unit__desc">Mastersystem - это профессиональная система управления веб-проектами, универсальный программный продукт для создания, поддержки и успешного развития</p>
-          <form action="" class="hero-unit__form">
-
-          </form>
-          <p class="hero-unit__entry">Уже используете CRM? <a class="hero-unit__entry-link" href="#">Войти</a></p>
-        </div>
-        <div class="hero-unit__column">
-          <div class="hero-unit__image">
-            <img src="./img/hero_image.png" alt="layout example">
+    <section class="section-hero">
+      <div class="container">
+        <div class="hero-unit">
+          <div class="hero-unit__column hero-unit__column--content">
+            <h1 class="h1 hero-unit__title">Mastersystem</br>создавай и управляй</h1>
+            <p class="hero-unit__desc">Mastersystem - это профессиональная система управления веб-проектами, универсальный программный продукт для создания, поддержки и успешного развития</p>
+            <form action="" class="hero-unit__form single-line-form">
+              <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Введите свой E-mail">
+              <button type="submit" class="btn btn-secondary">Попробуйте бесплатно</button>
+            </form>
+            <p class="hero-unit__entry">Уже используете CRM? <a class="hero-unit__entry-link" href="#">Войти</a></p>
+          </div>
+          <div class="hero-unit__column hero-unit__column--image">
+            <div class="hero-unit__image">
+              <img src="./img/hero_image.png" alt="layout example">
+            </div>
           </div>
         </div>
       </div>
@@ -66,11 +71,84 @@
     <!-- / HERO-UNIT -->
   </header>
   
-    <!-- FEATURES -->
-    <section class="section">
+  <!-- FEATURES -->
+  <section class="section">
+    <div class="container">
+      <div class="features">
+        <div class="features__description">
+          <h2 class="features__description-title">Идейные соображения</h2>
+          <p class="features__description-subtitle">Решения, которые принимала наша команда, основаны на потребностях и желаниях конечного пользователя. Благодаря им мы создали уникальную систему позволяющею эффективно управлять вашим бизнесом.</p>
+        </div>
+        <ul class="features__list row">
+          <li class="features__item col-sm-4 col-6">
+            <div class="features__item-icon">
+              <img src="./img/icons/prototyping.svg" alt="icon">
+            </div>
+            <span class="features__item-title">Глубокая проработка</span>
+            <p class="features__item-desc">Мы тщательно продумали UX и UI</p>
+          </li>
+          <li class="features__item col-sm-4 col-6">
+            <div class="features__item-icon">
+              <img src="./img/icons/cpu.svg" alt="icon">
+            </div>
+            <span class="features__item-title">Новейшие технологии</span>
+            <p class="features__item-desc">Только новейшие и проверенные технологии</p>
+          </li>
+          <li class="features__item col-sm-4 col-6">
+            <div class="features__item-icon">
+              <img src="./img/icons/hired.svg" alt="icon">
+            </div>
+            <span class="features__item-title">Интуитивность</span>
+            <p class="features__item-desc">Интуитивное управление сайтом</p>
+          </li>
+          <li class="features__item col-sm-4 col-6">
+            <div class="features__item-icon">
+              <img src="./img/icons/computer.svg" alt="icon">
+            </div>
+            <span class="features__item-title">Уникальный дизайн</span>
+            <p class="features__item-desc">Самобытный дизайн от специалистов</p>
+          </li>
+          <li class="features__item col-sm-4 col-6">
+            <div class="features__item-icon">
+              <img src="./img/icons/shield.svg" alt="icon">
+            </div>
+            <span class="features__item-title">Современная защита</span>
+            <p class="features__item-desc">Специалисты продумали защиту ваших данных</p>
+          </li>
+          <li class="features__item col-sm-4 col-6">
+            <div class="features__item-icon">
+              <img src="./img/icons/conversation.svg" alt="icon">
+            </div>
+            <span class="features__item-title">Быстрая поддержка</span>
+            <p class="features__item-desc">Обширный FAQ и система поддержки пользователей</p>
+          </li>
+          <li class="features__item col-sm-4 col-6">
+            <div class="features__item-icon">
+              <img src="./img/icons/paint-palette.svg" alt="icon">
+            </div>
+            <span class="features__item-title">Иллюстрации</span>
+            <p class="features__item-desc">Красивые иллюстрации, приятные глазу</p>
+          </li>
+          <li class="features__item col-sm-4 col-6">
+            <div class="features__item-icon">
+              <img src="./img/icons/binary-code.svg" alt="icon">
+            </div>
+            <span class="features__item-title">Лучшый код</span>
+            <p class="features__item-desc">Оптимизированный и качественный код</p>
+          </li>
+          <li class="features__item col-sm-4 col-6">
+            <div class="features__item-icon">
+              <img src="./img/icons/training.svg" alt="icon">
+            </div>
+            <span class="features__item-title">Обучение</span>
+            <p class="features__item-desc">Наличие обучение работы с системой</p>
+          </li>
+        </ul>
+      </div>
+    </div>
 
-    </section>
-    <!-- / FEATURES -->
+  </section>
+  <!-- / FEATURES -->
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

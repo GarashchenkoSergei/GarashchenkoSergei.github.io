@@ -1,3 +1,9 @@
+body {
+  @media (max-width: 567px) {
+    font-size: 14px;
+  }
+} 
+
 .container {
   padding: 0;
 }
@@ -5,4 +11,42 @@
 .fixed-position {
   position: fixed;
   width: 100%;
+}
+
+h1,
+.h1 {
+  @media (max-width: 567px) {
+    font-size: calc(1rem * 1.75);
+  }
+  
+  @media (min-width: 568px) and (max-width: 767px) {
+    font-size: calc(1rem * 2);
+  }
+  
+  @media (min-width: 768px) and (max-width: 1023px) {
+    font-size: calc(1rem * 2.25);
+  }
+  
+  @media (min-width: 1024px) {
+    font-size: calc(1rem * 3);
+  }
+}
+
+h2,
+.h2 {
+  @media (max-width: 567px) {
+    font-size: calc(1rem * 1.5);
+  }
+  
+  @media (min-width: 568px) and (max-width: 767px) {
+    font-size: calc(1rem * 1.75);
+  }
+  
+  @media (min-width: 768px) and (max-width: 1023px) {
+    font-size: calc(1rem * 2);
+  }
+  
+  @media (min-width: 1024px) {
+    font-size: calc(1rem * 2.5);
+  }
 }
